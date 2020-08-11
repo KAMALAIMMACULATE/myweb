@@ -3,15 +3,13 @@ body{
 	margin: 0;
 }
 .Home{
-	background-image: url(..//images/img1.png);
+	background-image: url(..//images/photo3.jpeg);
 	background-size:cover;
 	height: 99.6vh;
 
 }
 header{
 	background-color: #111;
-	border-bottom: 6px solid white;
-	border-bottom: 5px solid blue;
 }
 header nav{
 	max-width: 1200px;
@@ -27,7 +25,7 @@ header nav ul li{
 	float: left;
 }
 header nav ul li a{
-	color:blue;
+	color:#1123f0;
 	font-weight: bolder;
 	padding: 20px;
 	float: left;
@@ -38,23 +36,23 @@ header nav ul li a:hover{
 	color: white;
 }
 .me{
-	color: #fff;
-    padding-top:250px;
-    margin-left: 600px;
+	color: black;
+    padding-top:300px;
+    margin-left: 700px;
     font-size: 50px;
     font-style:sans-serif;
     font-weight: bold;
 }
 .me2{
-	color:blue;
+	color:#1123f0;
     padding-bottom:20px;
-    margin-left: 400px;
+    margin-left: 700px;
     font-size: 55px;
 
 }
-.About{
+/*.About{
 	background-color: #eff0e9;
-}
+}*/
 .line{
 	position: absolute;
 	color:blue;
@@ -78,7 +76,101 @@ ul{
 .Projects{
 	background-color:  #eff0e9;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 20px;
+}
 .Contact{
 	background-color:  #eff0e9;
+}
+# main.css> body-section
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "open sans", san-serif;
+	box-sizing: border-box;
+}
+.body{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+
+}
+.about{
+	background: 40%;
+	/*background-color: #42b9f5;*/
+	overflow: hidden;
+	padding: 50px 0;
+}
+.About{
+ 
+	background-image: url(..//images/photo3.jpeg);
+	background-size: cover;
+}
+
+.inner-container{
+	width: 55%;
+	float:right;
+	background-color: #fdfdfd;
+	padding: 100px;
+}
+.inner-container h1{
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 900;
+}
+.text{
+	font-size: 15px;
+	color: #545454;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+.skills{
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 13px;
+	padding: 1rem 2rem;
+	transition: color 0.3s, background 0.3s;
+	border-radius: 5px;
+	color: black;
+	border: 10px solid #1123f0;
+	font-weight: bold;
+
+
+}
+.skills:hover{
+	background-color: #1123f0;
+
+}
+@media screen and(max-width: 1200px){
+	.inner-contine{
+		padding:8px;
+	}
+}
+@media screen and(max-width: 1200px){
+	.inner-contine{
+		padding:8px;
+	}
+	.inner-container{
+		padding:60px;
+	}
 }
 
